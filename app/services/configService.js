@@ -2,22 +2,22 @@ angular.module('gdgXBoomerang')
 .factory('Config', function () {
     return {
         // TODO Modify these to configure your app
-        'name'          : 'GDG Space Coast',
-        'id'            : '103959793061819610212',
-        'googleApi'     : '<insert your API key here>',
-        'pwaId'         : '5915725140705884785', // Picasa Web Album id, must belong to Google+ id above
-        'domain'        : 'http://www.gdgspacecoast.org',
-        'twitter'       : 'gdgspacecoast',
-        'facebook'      : 'gdgspacecoast',
-        'meetup'        : 'gdgspacecoast',
+        'name'          : 'GDG Lima',
+        'id'            : '110122706499918118028',
+        'googleApi'     : 'AIzaSyD9OQXaZFCywc8tZXLekxDQh4ke9MEyXA8',
+        'pwaId'         : '6160961920179959393', // Picasa Web Album id, must belong to Google+ id above
+        'domain'        : 'http://www.gdglima.com',
+        'twitter'       : 'gdglima',
+        'facebook'      : 'gdglima',
+        'meetup'        : '',
         // Change to 'EEEE, MMMM d, y - H:mm' for 24 hour time format.
-        'dateFormat'    : 'EEEE, MMMM d, y - h:mm a',
+        'dateFormat'    : 'EEEE, y MMMM d - h:mm a',
         'cover' : {
-            title: 'Worldwide GDG Events',
-            subtitle: 'Directory of developer events organized by tags and displayed on a global map.',
+            title: 'Eventos GDG Lima',
+            subtitle: 'Directorio de Eventos organizados por el GDG Lima.',
             button: {
-                text: 'Find local events',
-                url: 'http://gdg.events/'
+                text: 'Encuentra eventos locales',
+                url: 'http://gdglima.com/#!/events'
             }
         },
         'activities': {
