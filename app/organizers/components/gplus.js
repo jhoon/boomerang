@@ -16,7 +16,7 @@ angular.module('gdgXBoomerang')
                 $http.jsonp('https://www.googleapis.com/plus/v1/people/' + newVal +
                         '?callback=JSON_CALLBACK&fields=aboutMe%2CdisplayName%2Cimage&key=' + Config.googleApi)
                         .success(function (data) {
-                            console.log("succes "+data);
+                            //console.log("succes "+data);
                             if (data && data.image && data.image.url) {
                                 data.image.url = data.image.url.replace('sz=50', 'sz=170');
                             }
@@ -24,7 +24,7 @@ angular.module('gdgXBoomerang')
                         }).
                         error(function (data)
                         {
-                            console.log("error "+data);
+                            //console.log("error "+data);
                         })
 
             };
@@ -32,7 +32,7 @@ angular.module('gdgXBoomerang')
             scope.$watch('gplusId', function (oldVal, newVal) {
                 if (newVal) {
 
-                    console.log("counter "+ window.counter+" "+window.counter%5);
+                    //console.log("counter "+ window.counter+" "+window.counter%5);
                     if(window.counter%5==0)
                     {
                         window.m++;
