@@ -8,8 +8,7 @@ angular.module('gdgXBoomerang')
     var activityList = {
         devFests: {
             name: 'Dev Fest Lima',
-            description: 'Dev Fest Lima es un evento a gran escala por la comunidad y para la comunidad . Los contenidos del evento giran en torno a tecnologías ' +
-                'desarrolladas por Google',
+            description: 'Dev Fest Lima es un evento a gran escala por la comunidad y para la comunidad . Los contenidos del evento giran en torno a tecnologías desarrolladas por Google',
             color: 'deepBlue',
             icon: '/app/images/icons/ic_event_48px.svg'
         },
@@ -44,9 +43,7 @@ angular.module('gdgXBoomerang')
             color: 'green',
             icon: '/app/images/icons/ic_code_48px.svg'
         }
-        
     };
-
     if (Config.activities.techTalks) {
         vm.activities.push(activityList.techTalks);
     }
@@ -65,5 +62,4 @@ angular.module('gdgXBoomerang')
     if (Config.activities.panels) {
         vm.activities.push(activityList.panels);
     }
-    
 });

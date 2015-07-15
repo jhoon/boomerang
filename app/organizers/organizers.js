@@ -1,3 +1,6 @@
+window.counter=0;
+window.m=0;
+
 angular.module('gdgXBoomerang')
 .controller('OrganizersController', function ($http, Config, NavService) {
     var vm = this;
@@ -5,7 +8,7 @@ angular.module('gdgXBoomerang')
     NavService.setNavTab(4);
 
     var url = 'http://hub.gdgx.io/api/v1/chapters/' + Config.id + '?callback=JSON_CALLBACK';
-    var headers = { 'headers': { 'Accept': 'application/json;' }, 'timeout': 2000 };
+    var headers = { 'headers': { 'Accept': 'application/json;' }, 'timeout': 5000 };
     $http.jsonp(url, headers).success(function (data) {
         if (data.organizers) {
             vm.organizers = data.organizers;
