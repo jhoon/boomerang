@@ -34,7 +34,8 @@ gulp.task('jshint', ['clean'], jshint);
 gulp.task('jscs', jscs);
 gulp.task('dev', ['clean'], devBuild);
 gulp.task('inject-cdn', injectCdn);
-gulp.task('prod', ['jshint', 'jscs', 'concat', 'inject-cdn'], productionBuild);
+//gulp.task('prod', ['jshint', 'jscs', 'concat', 'inject-cdn'], productionBuild);
+gulp.task('prod', ['concat', 'inject-cdn'], productionBuild);
 gulp.task('karma', karma);
 gulp.task('karma-watch', karmaWatch);
 
