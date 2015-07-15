@@ -1,12 +1,12 @@
 <!doctype html>
 <html ng-app="gdgXBoomerang" itemscope itemtype="http://schema.org/Organization">
     <head>
-        <title>Google Developer Group</title>
+        <title>GDG Lima</title>
         <link rel="canonical" ng-href="{{ canonical }}" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="description" content="Google Developer Groups (GDG) are technology user groups that meet to discuss the latest Technologies, Tools, SDKs, & APIs like Android, GWT, GAE, & GCP.">
-        <meta name="application-name" content="GDG Boomerang">
+        <meta name="application-name" content="GDG Lima">
         <meta name="fragment" content="!" />
         <link href="https://fonts.googleapis.com/css?family=RobotoDraft:400,300,500,700,400italic" rel="stylesheet" >
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700' rel='stylesheet'>
@@ -59,6 +59,9 @@
                 <a ng-if="mc.gdgLink" ng-href="{{ mc.gdgLink }}" target="_blank">
                     <img src="app/images/icons/GDG_square_lg.png" alt="GDG" class="png-icon gdg-icon grayscale">
                 </a>
+                <a ng-if="mc.githubLink" ng-href="{{ mc.githubLink }}" target="_blank">
+                    <img src="app/images/icons/github.png" alt="Meetup" class="png-icon invert">
+                </a>
             </div>
         </md-toolbar>
         <md-tabs class="navTabs" md-selected="mc.navTab" md-stretch-tabs="never">
@@ -66,7 +69,7 @@
             <md-tab id="news-tab"><a class="navTabLink" href="#!/news">Noticias</a></md-tab>
             <md-tab id="events-tab"><a class="navTabLink" href="#!/events">Eventos</a></md-tab>
             <md-tab id="activities-tab"><a class="navTabLink" href="#!/activities">Lo que hacemos</a></md-tab>
-            <md-tab id="organizers-tab"><a class="navTabLink" href="#!/organizers">Organizadores</a></md-tab>
+            <md-tab id="organizers-tab"><a class="navTabLink" href="#!/organizers">Miembros</a></md-tab>
             <md-tab id="photos-tab"><a class="navTabLink" href="#!/photos">Fotos</a></md-tab>
         </md-tabs>
         <div layout layout-margin layout-align="center start">
