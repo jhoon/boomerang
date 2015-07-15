@@ -26,7 +26,8 @@ var getBundleName = function () {
 /**
  *  Tasks
  */
-gulp.task('default', ['jshint', 'jscs', 'dev']);
+//gulp.task('default', ['jshint', 'jscs', 'dev']);
+gulp.task('default', ['dev']);
 gulp.task('clean', clean);
 gulp.task('concat', ['clean'], concat);
 gulp.task('jshint', ['clean'], jshint);
